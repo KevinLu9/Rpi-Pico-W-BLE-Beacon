@@ -57,24 +57,22 @@ int main()
     att_server_init(profile_data, NULL, NULL);   
 
     // setup advertisements
-    uint16_t adv_int_min = 0x0030;
-    uint16_t adv_int_max = 0x0030;
+    uint16_t adv_int_min = 0x0600;
+    uint16_t adv_int_max = 0x0600;
     uint8_t adv_type = 0;
     bd_addr_t null_addr;
     memset(null_addr, 0, 6);
     gap_advertisements_set_params(adv_int_min, adv_int_max, adv_type, 0, null_addr, 0x07, 0x00);
     gap_advertisements_set_data(adv_data_len, (uint8_t*) adv_data);
     gap_advertisements_enable(1); 
+    hci_power_control(HCI_POWER_ON);
 
     while (1) {
         // cycle on and off every second!
         cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
         sleep_ms(500);
         cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
-        hci_power_control(HCI_POWER_ON);
-        sleep_ms(40);
-        hci_power_control(HCI_POWER_OFF);
-        sleep_ms(460);
+        sleep_ms(500);
     }
 	
     
