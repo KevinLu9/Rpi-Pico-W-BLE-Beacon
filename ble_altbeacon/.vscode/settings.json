@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cyw43_arch.h": "c",
+        "battery_service_server.h": "c"
+    }
+}
