@@ -1127,7 +1127,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ble_beacon::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ble_beacon-Debug-28a659250d2803bb14f5.json",
+					"jsonFile" : "target-ble_beacon-Debug-e118fce7c4012f358871.json",
 					"name" : "ble_beacon",
 					"projectIndex" : 0
 				},
@@ -1141,7 +1141,7 @@
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-1d099411d0a5cc07db47.json",
+					"jsonFile" : "target-bs2_default-Debug-05b4ba745644d9238775.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
@@ -1186,8 +1186,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Crypternix/Desktop/ble_beacon/build",
-		"source" : "C:/Users/Crypternix/Desktop/ble_beacon"
+		"build" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build",
+		"source" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon"
 	},
 	"version" : 
 	{

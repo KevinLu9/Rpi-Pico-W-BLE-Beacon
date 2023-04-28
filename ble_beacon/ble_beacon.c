@@ -9,7 +9,7 @@
 #include "ble/gatt-service/battery_service_server.h"
 #include "hardware/gpio.h"
 /*
-BLE_Beacon Server for Raspberry Pi Pico
+BLE_Beacon Server for Raspberry Pi Pico         
 */
 
 #define APP_AD_FLAGS 0x06
@@ -20,11 +20,21 @@ const uint8_t adv_data[] = {
     0x02, BLUETOOTH_DATA_TYPE_FLAGS, APP_AD_FLAGS,
     // Name
     0x0b, BLUETOOTH_DATA_TYPE_COMPLETE_LOCAL_NAME, 'B', 'L', 'E', ' ', 'B', 'E', 'A', 'C', 'O', 'N', 
+    // TX Power Level
+    0x02, BLUETOOTH_DATA_TYPE_TX_POWER_LEVEL, 0x04,
     // Manufacurer data
-    0x0A, BLUETOOTH_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA, 0x18, 0x01, 'd', 'e', 'v', 'i', 'c', 'e', '1'
+    0x04, BLUETOOTH_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA, 0xEE, 0xEE, 0x01,
+
+    //0x0A, BLUETOOTH_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA, 0x18, 0x01, 'd', 'e', 'v', 'i', 'c', 'e', '1',
     // Altbeacon Manufacturer data example
     //0x1b, BLUETOOTH_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA, 0x18, 0x01, 0xbe, 0xac, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x11, 0x22, 0x33, 0x44, 0xB3, 0x00,
     
+    // BLE advertisement data from previous FYP project. 
+    // 0x03, 0x01, 0x02, 0x04,
+    //0x05, 0xFF, 0xFF, 0xFF, 0x46, 0x48,  // manufacturer id 0xFFFF messes with web bluetooth API.
+    // 0x05, 0x16, 0x46, 0x59, 0x50, 0x03,
+    // 0x02, 0x0A, 0x04,
+    // 0x08, 0x09, 0x46, 0x59, 0x50, 0x20, 0x74, 0x61, 0x67
     };
 const uint8_t adv_data_len = sizeof(adv_data);
 

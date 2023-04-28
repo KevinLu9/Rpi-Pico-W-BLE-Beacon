@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-addr2line.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-ar.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-ar.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER",
@@ -195,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Crypternix/Desktop/ble_beacon/build"
+			"value" : "j:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -279,11 +279,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe"
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -299,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ar.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -315,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -407,11 +407,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe"
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -427,7 +427,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ar.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -443,7 +443,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-gcc-ranlib.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Crypternix/Desktop/ble_beacon/build/CMakeFiles/pkgRedirects"
+			"value" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -739,7 +739,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Crypternix/Desktop/ble_beacon"
+			"value" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -767,7 +767,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-ld.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -879,7 +879,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-nm.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -987,7 +987,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1003,7 +1003,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-readelf.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1223,7 +1223,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/gcc-arm-none-eabi/bin/arm-none-eabi-strip.exe"
+			"value" : "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/arm-none-eabi-strip.exe"
 		},
 		{
 			"name" : "CMAKE_TOOLCHAIN_FILE",
@@ -1463,7 +1463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/src/rp2040/hardware_regs C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1751,7 +1751,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Crypternix/Desktop/ble_beacon/build"
+			"value" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build"
 		},
 		{
 			"name" : "ble_beacon_IS_TOP_LEVEL",
@@ -1775,7 +1775,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Crypternix/Desktop/ble_beacon"
+			"value" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon"
 		},
 		{
 			"name" : "pico-sdk-tools_DIR",
@@ -1799,7 +1799,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Crypternix/Desktop/ble_beacon/build/pico-sdk"
+			"value" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_IS_TOP_LEVEL",

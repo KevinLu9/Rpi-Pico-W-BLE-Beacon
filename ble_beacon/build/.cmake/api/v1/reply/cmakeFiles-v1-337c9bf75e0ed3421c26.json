@@ -654,8 +654,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/Crypternix/Desktop/ble_beacon/build",
-		"source" : "C:/Users/Crypternix/Desktop/ble_beacon"
+		"build" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build",
+		"source" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon"
 	},
 	"version" : 
 	{

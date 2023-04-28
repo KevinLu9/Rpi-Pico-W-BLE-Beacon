@@ -343,11 +343,11 @@
 			[
 				{
 					"backtrace" : 14,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon"
 				},
 				{
 					"backtrace" : 15,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/generated"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated"
 				},
 				{
 					"backtrace" : 2,
@@ -363,7 +363,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/generated/pico_base"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -587,7 +587,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
 				},
 				{
 					"backtrace" : 2,
@@ -1030,11 +1030,11 @@
 			[
 				{
 					"backtrace" : 14,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon"
 				},
 				{
 					"backtrace" : 15,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/generated"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated"
 				},
 				{
 					"backtrace" : 2,
@@ -1050,7 +1050,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/generated/pico_base"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -1274,7 +1274,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
 				},
 				{
 					"backtrace" : 2,
@@ -1542,11 +1542,11 @@
 			[
 				{
 					"backtrace" : 14,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon"
 				},
 				{
 					"backtrace" : 15,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/generated"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated"
 				},
 				{
 					"backtrace" : 2,
@@ -1562,7 +1562,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/generated/pico_base"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -1786,7 +1786,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Crypternix/Desktop/ble_beacon/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
+					"path" : "J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/pico-sdk/src/rp2_common/pico_cyw43_driver"
 				},
 				{
 					"backtrace" : 2,
@@ -2632,6 +2632,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "-Wl,--gc-sections",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-Wl,--no-warn-rwx-segments",
 				"role" : "flags"
 			},
 			{

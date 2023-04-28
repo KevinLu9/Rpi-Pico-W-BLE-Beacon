@@ -1,9 +1,9 @@
 
-// C:/Users/Crypternix/Desktop/ble_beacon/build/generated/gatt_counter.h generated from C:/Users/Crypternix/Desktop/ble_beacon/gatt_counter.gatt for BTstack
+// J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated/gatt_counter.h generated from J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/gatt_counter.gatt for BTstack
 // it needs to be regenerated when the .gatt file is updated. 
 
-// To generate C:/Users/Crypternix/Desktop/ble_beacon/build/generated/gatt_counter.h:
-// C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/lib/btstack/tool/compile_gatt.py C:/Users/Crypternix/Desktop/ble_beacon/gatt_counter.gatt C:/Users/Crypternix/Desktop/ble_beacon/build/generated/gatt_counter.h
+// To generate J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated/gatt_counter.h:
+// C:/Program Files/Raspberry Pi/Pico SDK v1.5.0/pico-sdk/lib/btstack/tool/compile_gatt.py J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/gatt_counter.gatt J:/Local Personal Learning/Rpi-Pico-BLE-Beacon/ble_beacon/build/generated/gatt_counter.h
 
 // att db format version 1
 
@@ -52,7 +52,7 @@ const uint8_t profile_data[] =
     0x0d, 0x00, 0x02, 0x00, 0x09, 0x00, 0x03, 0x28, 0x02, 0x0a, 0x00, 0x2a, 0x2b, 
     // 0x000a VALUE CHARACTERISTIC-GATT_DATABASE_HASH - READ -''
     // READ_ANYBODY
-    0x18, 0x00, 0x02, 0x00, 0x0a, 0x00, 0x2a, 0x2b, 0xf9, 0x48, 0x69, 0xaf, 0x1d, 0xf2, 0x71, 0xca, 0x87, 0x7c, 0xe8, 0x36, 0x22, 0x60, 0xf9, 0x09, 
+    0x18, 0x00, 0x02, 0x00, 0x0a, 0x00, 0x2a, 0x2b, 0x2e, 0xc3, 0x75, 0x3d, 0x4a, 0x05, 0xd7, 0x14, 0x18, 0xcf, 0xdc, 0xa0, 0x1f, 0x32, 0xc5, 0x2b, 
     // Counter Service
     // 0x000b PRIMARY_SERVICE-0000FF10-0000-1000-8000-00805F9B34FB
     0x18, 0x00, 0x02, 0x00, 0x0b, 0x00, 0x00, 0x28, 0xfb, 0x34, 0x9b, 0x5f, 0x80, 0x00, 0x00, 0x80, 0x00, 0x10, 0x00, 0x00, 0x10, 0xff, 0x00, 0x00, 
