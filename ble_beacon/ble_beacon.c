@@ -19,36 +19,25 @@ const uint8_t adv_data[] = {
     // Flags general discoverable
     0x02, BLUETOOTH_DATA_TYPE_FLAGS, APP_AD_FLAGS,
     // Name
-    0x0b, BLUETOOTH_DATA_TYPE_COMPLETE_LOCAL_NAME, 'B', 'L', 'E', ' ', 'B', 'E', 'A', 'C', 'O', 'N', 
+    0x0b, BLUETOOTH_DATA_TYPE_COMPLETE_LOCAL_NAME, 'B', 'L', 'E', ' ', 'B', 'E', 'A', 'C', 'O', 'N',
     // TX Power Level
-    0x02, BLUETOOTH_DATA_TYPE_TX_POWER_LEVEL, 0x04,
+    0x02, BLUETOOTH_DATA_TYPE_TX_POWER_LEVEL, 0x34,
     // Manufacurer data
     0x04, BLUETOOTH_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA, 0xEE, 0xEE, 0x01,
-
-    //0x0A, BLUETOOTH_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA, 0x18, 0x01, 'd', 'e', 'v', 'i', 'c', 'e', '1',
-    // Altbeacon Manufacturer data example
-    //0x1b, BLUETOOTH_DATA_TYPE_MANUFACTURER_SPECIFIC_DATA, 0x18, 0x01, 0xbe, 0xac, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x11, 0x22, 0x33, 0x44, 0xB3, 0x00,
-    
-    // BLE advertisement data from previous FYP project. 
-    // 0x03, 0x01, 0x02, 0x04,
-    //0x05, 0xFF, 0xFF, 0xFF, 0x46, 0x48,  // manufacturer id 0xFFFF messes with web bluetooth API.
-    // 0x05, 0x16, 0x46, 0x59, 0x50, 0x03,
-    // 0x02, 0x0A, 0x04,
-    // 0x08, 0x09, 0x46, 0x59, 0x50, 0x20, 0x74, 0x61, 0x67
     };
+
+
 const uint8_t adv_data_len = sizeof(adv_data);
+
 
 static void blinkLED(int ms_time){
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-    sleep_ms(ms_time);
+    sleep_ms(100);
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
     sleep_ms(ms_time);
-
 }
 
-/* LISTING_END */
 
-int main();
 int main()
 {
     if (cyw43_arch_init()) {
@@ -74,15 +63,17 @@ int main()
     memset(null_addr, 0, 6);
     gap_advertisements_set_params(adv_int_min, adv_int_max, adv_type, 0, null_addr, 0x07, 0x00);
     gap_advertisements_set_data(adv_data_len, (uint8_t*) adv_data);
+    // Set the device mac address in code
+    uint8_t btMac[6] = { 0x4F, 0x22, 0xAF, 0x03, 0xE7, 0x4E }; // MAC address of device 1 (CF:22:AF:03:E7:4E)
+    // uint8_t btMac[6] = { 0x83, 0xA4, 0xC6, 0x3D, 0xB8, 0xDF }; // MAC address of device 2 (C4:A4:C6:3D:B8:DF)
+    // uint8_t btMac[6] = { 0x6F, 0x1A, 0x91, 0x4E, 0xEF, 0x5D }; // MAC address of device 3 (EF:1A:91:4E:EF:5D)
+    gap_random_address_set(btMac);
     gap_advertisements_enable(1); 
     hci_power_control(HCI_POWER_ON);
 
     while (1) {
-        // cycle on and off every second!
-        cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-        sleep_ms(500);
-        cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
-        sleep_ms(500);
+        // blinks on and off every 5 seconds!
+        blinkLED(5000);
     }
 	
     
