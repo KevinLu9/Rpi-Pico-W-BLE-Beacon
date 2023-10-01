@@ -349,7 +349,7 @@ Disassembly of section .text:
 1000032a:	b089      	sub	sp, #36	; 0x24
 1000032c:	f010 fd00 	bl	10010d30 <cyw43_arch_init>
 10000330:	1e05      	subs	r5, r0, #0
-10000332:	d148      	bne.n	100003c6 <main+0x9e>
+10000332:	d149      	bne.n	100003c8 <main+0xa0>
 10000334:	2064      	movs	r0, #100	; 0x64
 10000336:	f7ff ffe5 	bl	10000304 <blinkLED>
 1000033a:	f00f fe15 	bl	1000ff68 <l2cap_init>
@@ -360,7 +360,7 @@ Disassembly of section .text:
 1000034a:	f7ff ffdb 	bl	10000304 <blinkLED>
 1000034e:	2200      	movs	r2, #0
 10000350:	0011      	movs	r1, r2
-10000352:	4820      	ldr	r0, [pc, #128]	; (100003d4 <main+0xac>)
+10000352:	4821      	ldr	r0, [pc, #132]	; (100003d8 <main+0xb0>)
 10000354:	f006 f848 	bl	100063e8 <att_server_init>
 10000358:	ac06      	add	r4, sp, #24
 1000035a:	2206      	movs	r2, #6
@@ -377,11 +377,11 @@ Disassembly of section .text:
 10000372:	0013      	movs	r3, r2
 10000374:	0001      	movs	r1, r0
 10000376:	f009 f915 	bl	100095a4 <gap_advertisements_set_params>
-1000037a:	4917      	ldr	r1, [pc, #92]	; (100003d8 <main+0xb0>)
+1000037a:	4918      	ldr	r1, [pc, #96]	; (100003dc <main+0xb4>)
 1000037c:	2017      	movs	r0, #23
 1000037e:	f00f f8d3 	bl	1000f528 <gap_advertisements_set_data>
 10000382:	a804      	add	r0, sp, #16
-10000384:	4b15      	ldr	r3, [pc, #84]	; (100003dc <main+0xb4>)
+10000384:	4b16      	ldr	r3, [pc, #88]	; (100003e0 <main+0xb8>)
 10000386:	681a      	ldr	r2, [r3, #0]
 10000388:	9204      	str	r2, [sp, #16]
 1000038a:	889b      	ldrh	r3, [r3, #4]
@@ -394,28 +394,29 @@ Disassembly of section .text:
 1000039e:	002c      	movs	r4, r5
 100003a0:	2001      	movs	r0, #1
 100003a2:	f00f f859 	bl	1000f458 <hci_power_control>
-100003a6:	2032      	movs	r0, #50	; 0x32
+100003a6:	2064      	movs	r0, #100	; 0x64
 100003a8:	f001 fa72 	bl	10001890 <sleep_ms>
 100003ac:	2000      	movs	r0, #0
 100003ae:	f00f f853 	bl	1000f458 <hci_power_control>
-100003b2:	480b      	ldr	r0, [pc, #44]	; (100003e0 <main+0xb8>)
-100003b4:	f001 fa6c 	bl	10001890 <sleep_ms>
-100003b8:	3401      	adds	r4, #1
-100003ba:	2c04      	cmp	r4, #4
-100003bc:	ddf0      	ble.n	100003a0 <main+0x78>
-100003be:	2000      	movs	r0, #0
-100003c0:	f7ff ffa0 	bl	10000304 <blinkLED>
-100003c4:	e7eb      	b.n	1000039e <main+0x76>
-100003c6:	4807      	ldr	r0, [pc, #28]	; (100003e4 <main+0xbc>)
-100003c8:	f003 ff28 	bl	1000421c <__wrap_printf>
-100003cc:	2001      	movs	r0, #1
-100003ce:	4240      	negs	r0, r0
-100003d0:	b009      	add	sp, #36	; 0x24
-100003d2:	bd30      	pop	{r4, r5, pc}
-100003d4:	1001b804 	.word	0x1001b804
-100003d8:	1001b7ec 	.word	0x1001b7ec
-100003dc:	1001b7e4 	.word	0x1001b7e4
-100003e0:	000003b6 	.word	0x000003b6
+100003b2:	20c8      	movs	r0, #200	; 0xc8
+100003b4:	0040      	lsls	r0, r0, #1
+100003b6:	f001 fa6b 	bl	10001890 <sleep_ms>
+100003ba:	3401      	adds	r4, #1
+100003bc:	2c09      	cmp	r4, #9
+100003be:	ddef      	ble.n	100003a0 <main+0x78>
+100003c0:	2000      	movs	r0, #0
+100003c2:	f7ff ff9f 	bl	10000304 <blinkLED>
+100003c6:	e7ea      	b.n	1000039e <main+0x76>
+100003c8:	4806      	ldr	r0, [pc, #24]	; (100003e4 <main+0xbc>)
+100003ca:	f003 ff27 	bl	1000421c <__wrap_printf>
+100003ce:	2001      	movs	r0, #1
+100003d0:	4240      	negs	r0, r0
+100003d2:	b009      	add	sp, #36	; 0x24
+100003d4:	bd30      	pop	{r4, r5, pc}
+100003d6:	46c0      	nop			; (mov r8, r8)
+100003d8:	1001b804 	.word	0x1001b804
+100003dc:	1001b7ec 	.word	0x1001b7ec
+100003e0:	1001b7e4 	.word	0x1001b7e4
 100003e4:	1001b7d0 	.word	0x1001b7d0
 
 100003e8 <gpio_set_function>:

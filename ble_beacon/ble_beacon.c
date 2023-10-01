@@ -75,12 +75,12 @@ int main()
 
     while (1) {
         hci_power_control(HCI_POWER_ON);
-        sleep_ms(50);
+        sleep_ms(100);
         hci_power_control(HCI_STATE_OFF);
-        sleep_ms(950);
+        sleep_ms(400);
         count++;
         // blinks on and off every 5 seconds!
-        if (count >= 5) {
+        if (count >= 10) {
             count = 0;
             blinkLED(0);
         }
